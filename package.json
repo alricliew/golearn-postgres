@@ -1,0 +1,21 @@
+{
+  "name": "gl5-postgres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "supabase": "^2.120.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@supabase-js/source": "github:supabase/supabase-js",
+    "@supabase/supabase-js": "^2.80.0",
+    "zod": "^4.1.12"
+  }
+}

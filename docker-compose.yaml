@@ -1,0 +1,25 @@
+# Use this file to define your application's services, networks, and volumes.
+# Tutorial: https://www.youtube.com/watch?v=gySEbKmkvEU
+services:
+  postgres:
+    image: postgres:16 
+    container_name: gl5_postgres
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: gl5_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@golearn.com.my
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+
+volumes:
+  postgres_data:

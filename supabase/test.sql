@@ -1,0 +1,1 @@
+SELECT * FROM tutor_v5 WHERE pro= any('vip1', 'vip2');
